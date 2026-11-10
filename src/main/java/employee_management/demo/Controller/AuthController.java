@@ -31,8 +31,7 @@ public class AuthController {
         return authService.refreshToken(request);
     }
 
-    //    @PostMapping("/logout")
-//    public  void  logout(){}
+
     @PostMapping("/register")
     public APIResponse<?> register(@Valid @RequestBody RegisterRequest dto) throws MessagingException {
         return authService.registerUser(dto);
@@ -51,9 +50,6 @@ public class AuthController {
 
     }
 
-//    public APIResponse refresh(){
-//
-//    }
 
     @GetMapping("/verify-email")
     public APIResponse<?> verifyUserEmail(

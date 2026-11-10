@@ -88,7 +88,9 @@ public class SecurityConfig {
                                 // /users/forgot-password
                                 "/api/v1/auth/**",
                                 "/api/v1/users",
-                                "/api/v1/employee/**")
+                                "/api/v1/employee/**",
+                     "/actuator/**"
+                     ,"/api/v1/leave-request-types/**")
 
                         /*
                          * permitAll() means

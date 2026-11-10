@@ -12,19 +12,19 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name="leave_types")
-public class LeaveRequestTypes {
+@Table(name = "leave_types")
+public class LeaveTypes {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    @Column(name="name",nullable = false,unique = true)
+    @Column(name = "name", nullable = false, unique = true)
     private String name;
-    @Column(name="description")
+    @Column(name = "description")
     private String description;
     @CreationTimestamp
-    @Column(name = "created_at",nullable = false)
+    @Column(name = "created_at", nullable = false)
     private LocalDateTime createdDate;
     @UpdateTimestamp
-    @Column(name = "updated_at",nullable = false)
+    @Column(name = "updated_at", nullable = false)
     private LocalDateTime updatedDate;
 }

@@ -3,7 +3,9 @@ package employee_management.demo.EmployeeRepository;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import employee_management.demo.Modal.Employees;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface EmployeeRepository extends JpaRepository<Employees, String> {
 
     boolean existsByUserId(String userId);

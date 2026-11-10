@@ -63,10 +63,10 @@ public class AuthService {
                     null);
         }
 
-        if (userRepository.existsByUsername(username)) {
-            return new APIResponse<>(
-                    "Username already exists", 409, "CONFLICT", null, null);
-        }
+//        if (userRepository.existsByUsername(username)) {
+//            return new APIResponse<>(
+//                    "Username already exists", 409, "CONFLICT", null, null);
+//        }
 
         // Create user
         User user = new User();

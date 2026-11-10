@@ -26,7 +26,7 @@ import jakarta.persistence.EntityManagerFactory;
 public class EmployeeManagementDbConfig {
 
     @Bean
-    @ConfigurationProperties("spring.datasource.employee-leave-management")
+    @ConfigurationProperties("spring.datasource.employee-management")
     public DataSourceProperties employeeDataSourceProperties() {
         return new DataSourceProperties();
     }
